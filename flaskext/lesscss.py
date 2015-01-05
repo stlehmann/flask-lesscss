@@ -26,7 +26,7 @@ def lesscss(app):
         else:
             static_url_path = app.static_url_path
         
-        static_dir = app.root_path + app.static_url_path
+        static_dir = app.static_folder
         
         less_paths = []
         for path, subdirs, filenames in os.walk(static_dir):
